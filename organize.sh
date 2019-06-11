@@ -1,9 +1,9 @@
 #! /bin/bash
 set -x
 FILETYPE="jpg"
-PATH="./temp"
+FILEPATH="./temp"
 for FILE in ./temp/*.jpg
-#for FILE in $PATH/*.$FILETYPE
+#for FILE in $FILEPATH/*.$FILETYPE
     do
         Date=$(stat -c %y $FILE) #Date modified
         DateTime=${Date:0:16} #Just the date and time
